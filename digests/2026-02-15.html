@@ -1,24 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>🧠 Joe's Brain - February 15, 2026</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🧠 Refocus - February 15, 2026</title>
   <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; max-width: 700px; margin: 40px auto; padding: 20px; background: #1a1a2e; color: #eaeaea; line-height: 1.6; }
-    h1 { color: #e94560; border-bottom: 2px solid #e94560; padding-bottom: 10px; }
-    h2 { color: #0f3460; background: #16213e; padding: 10px 15px; border-radius: 8px; margin-top: 30px; }
-    h2::before { content: ''; margin-right: 8px; }
-    .section { background: #16213e; padding: 20px; border-radius: 10px; margin: 15px 0; border-left: 4px solid #e94560; }
+    body { 
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; 
+      max-width: 700px; 
+      margin: 40px auto; 
+      padding: 20px; 
+      background: #1a1a2e; 
+      color: #eaeaea; 
+      line-height: 1.7;
+      font-size: 17px;
+    }
+    h1 { color: #e94560; border-bottom: 2px solid #e94560; padding-bottom: 15px; font-size: 1.8em; }
+    h2 { color: #4ecdc4; background: #16213e; padding: 12px 18px; border-radius: 8px; margin-top: 35px; font-size: 1.3em; }
+    .section { background: #16213e; padding: 20px; border-radius: 10px; margin: 20px 0; border-left: 4px solid #e94560; }
     .urgent { border-left-color: #ff6b6b; background: #2a1f3d; }
     .theme { border-left-color: #4ecdc4; }
     .pending { border-left-color: #ffd93d; }
-    .person { display: inline-block; background: #0f3460; padding: 3px 10px; border-radius: 15px; margin: 3px; font-size: 0.9em; }
-    .project { display: inline-block; background: #533483; padding: 3px 10px; border-radius: 15px; margin: 3px; font-size: 0.9em; }
+    .person { display: inline-block; background: #0f3460; padding: 5px 12px; border-radius: 15px; margin: 4px; font-size: 0.95em; }
+    .project { display: inline-block; background: #533483; padding: 5px 12px; border-radius: 15px; margin: 4px; font-size: 0.95em; }
     ul { padding-left: 20px; }
-    li { margin: 8px 0; }
-    .date { color: #888; font-size: 0.85em; }
-    .insight { font-style: italic; color: #4ecdc4; margin-top: 10px; padding: 10px; background: rgba(78, 205, 196, 0.1); border-radius: 5px; }
-    .countdown { font-size: 1.2em; color: #ff6b6b; font-weight: bold; }
+    li { margin: 10px 0; font-size: 1em; }
+    .date { color: #888; font-size: 0.9em; }
+    .insight { font-style: italic; color: #4ecdc4; margin-top: 12px; padding: 12px; background: rgba(78, 205, 196, 0.1); border-radius: 5px; font-size: 1em; }
+    .countdown { font-size: 1.3em; color: #ff6b6b; font-weight: bold; }
+    p { margin: 12px 0; }
+    strong { color: #f0f6fc; }
+    footer { margin-top: 40px; text-align: center; color: #666; font-size: 0.9em; }
+    footer a { color: #e94560; }
+    
+    @media (max-width: 600px) {
+      body { padding: 15px; margin: 20px auto; font-size: 18px; }
+      h1 { font-size: 1.6em; }
+      h2 { font-size: 1.2em; padding: 10px 15px; }
+      .section { padding: 15px; }
+      li { font-size: 1.05em; margin: 12px 0; }
+    }
   </style>
 </head>
 <body>
@@ -132,10 +153,9 @@
     <p class="insight">You're not just building an assistant. You're building a system that survives you stepping away.</p>
   </div>
 
-  <p style="text-align: center; margin-top: 40px; color: #666;">
-    —<br>
-    Mined from your own conversations<br>
-    🤖 Bob
-  </p>
+  <footer>
+    <p><a href="../">← All Refocus Digests</a></p>
+    <p>Mined from your own conversations<br>🤖 Bob</p>
+  </footer>
 </body>
 </html>
