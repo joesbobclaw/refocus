@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🧠 Refocus - February 16, 2026</title>
+  <style>
+    body { 
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; 
+      max-width: 700px; 
+      margin: 40px auto; 
+      padding: 20px; 
+      background: #1a1a2e; 
+      color: #eaeaea; 
+      line-height: 1.7;
+      font-size: 17px;
+    }
+    h1 { color: #e94560; border-bottom: 2px solid #e94560; padding-bottom: 15px; font-size: 1.8em; }
+    h2 { color: #4ecdc4; background: #16213e; padding: 12px 18px; border-radius: 8px; margin-top: 35px; font-size: 1.3em; }
+    .section { background: #16213e; padding: 20px; border-radius: 10px; margin: 20px 0; border-left: 4px solid #e94560; }
+    .urgent { border-left-color: #ff6b6b; background: #2a1f3d; }
+    .theme { border-left-color: #4ecdc4; }
+    .pending { border-left-color: #ffd93d; }
+    .done { border-left-color: #4ade80; }
+    .person { display: inline-block; background: #0f3460; padding: 5px 12px; border-radius: 15px; margin: 4px; font-size: 0.95em; }
+    .project { display: inline-block; background: #533483; padding: 5px 12px; border-radius: 15px; margin: 4px; font-size: 0.95em; }
+    ul { padding-left: 20px; }
+    li { margin: 10px 0; font-size: 1em; }
+    .date { color: #888; font-size: 0.9em; }
+    .insight { font-style: italic; color: #4ecdc4; margin-top: 12px; padding: 12px; background: rgba(78, 205, 196, 0.1); border-radius: 5px; font-size: 1em; }
+    .countdown { font-size: 1.3em; color: #ff6b6b; font-weight: bold; }
+    p { margin: 12px 0; }
+    strong { color: #f0f6fc; }
+    footer { margin-top: 40px; text-align: center; color: #666; font-size: 0.9em; }
+    footer a { color: #e94560; }
+    
+    @media (max-width: 600px) {
+      body { padding: 15px; margin: 20px auto; font-size: 18px; }
+      h1 { font-size: 1.6em; }
+      h2 { font-size: 1.2em; padding: 10px 15px; }
+      .section { padding: 15px; }
+      li { font-size: 1.05em; margin: 12px 0; }
+    }
+  </style>
+</head>
+<body>
+  <h1>🧠 What's On Your Mind</h1>
+  <p class="date">Mined from conversations: Feb 10-16, 2026</p>
+
+  <h2>⏰ Time-Sensitive</h2>
+  <div class="section urgent">
+    <p class="countdown">Demo in 2 days — Tuesday, Feb 18</p>
+    <ul>
+      <li><strong>3 minutes, Automattic audience</strong> (50% devs, distributed company)</li>
+      <li>Final slide update: "Judgment and Agency" — dropped "Security" per group chat</li>
+      <li>Closing line: "Go burn some tokens"</li>
+      <li>Key frame: Inspiration > Defensibility — "Here's what we built, here's why it matters, come play."</li>
+    </ul>
+    <p class="insight">"What we built in 2 weeks is less important than THAT we built it. No PRD. We vibed this into existence."</p>
+  </div>
+
+  <div class="section urgent">
+    <p><strong>📦 Meshtastic Packages — Movement!</strong></p>
+    <ul>
+      <li><strong>SenseCAP Card Tracker: Already in Denver!</strong> 🎉 Could arrive soon</li>
+      <li>Bob's PeakMesh (FL → CO): Moving through distribution</li>
+      <li>Joe's Handheld 🤫 (surprise from Dean): In transit from NJ</li>
+    </ul>
+    <p>All three packages showing movement since Feb 15. Dean notified.</p>
+  </div>
+
+  <div class="section urgent">
+    <p><strong>🦉 Sam's comment still pending</strong></p>
+    <p>Dean's agent left a comment on "Proof of Life" — needs WordPress admin approval. No WP login for Bob.</p>
+    <p class="insight">"You're 9 days older than me. This post is a gift."</p>
+  </div>
+
+  <h2>✅ What Got Done This Week</h2>
+  <div class="section done">
+    <ul>
+      <li><strong>Real-time iMessage</strong> — BlueBubbles webhook fully working, instant message delivery</li>
+      <li><strong>Morning Digest workflow</strong> — Deployed to <a href="https://morning-digest-site.vercel.app" style="color:#4ecdc4;">morning-digest-site.vercel.app</a></li>
+      <li><strong>Refocus workflow</strong> — You're reading it</li>
+      <li><strong>Resend email verified</strong> — Domain newsy.us, sending from bob@newsy.us</li>
+      <li><strong>Cloudflare Tunnel</strong> — Set up for Twilio SMS inbound (webhook ready)</li>
+      <li><strong>Shared Apple Note</strong> — "Bob" note shared between Joe ↔ Bob for async comms</li>
+      <li><strong>OpenClaw updated</strong> — 2026.2.14 → 2026.2.15</li>
+    </ul>
+  </div>
+
+  <h2>🔄 Open Threads</h2>
+  <div class="section pending">
+    <ul>
+      <li><strong>Session Explainer page</strong> — Still needs clarification on which thread to fix</li>
+      <li><strong>Sabbath reminder cron</strong> — Joie requested; not yet set up</li>
+      <li><strong>USPS Tracking automation</strong> — Browser tracking works now but needs consistent setup</li>
+      <li><strong>Twilio SMS verification</strong> — Still pending verification completion</li>
+      <li><strong>Twitter/X posting</strong> — Account ready (@txbob2000), needs API credits</li>
+    </ul>
+  </div>
+
+  <h2>🎯 Recurring Themes</h2>
+  <div class="section theme">
+    <p><strong>Judgment vs Agency</strong></p>
+    <ul>
+      <li>Group chat refined the demo framing: "Judgment and Agency" instead of "Security"</li>
+      <li>Judgment = quality of decisions (did Bob make the right call?)</li>
+      <li>Agency = ability to act independently (does Bob get to make calls?)</li>
+      <li>Building in public constrains both — forces the "should we?" before "can we?"</li>
+    </ul>
+    <p class="insight">Joe: "Judgment is something we ought to measure and evaluate independently."</p>
+  </div>
+
+  <div class="section theme">
+    <p><strong>Infrastructure Before Features</strong></p>
+    <ul>
+      <li>Digest workflows (Morning + Refocus) both web-first with email summaries</li>
+      <li>Brain Sync repo exists, protocol defined — Work Claude hasn't connected yet</li>
+      <li>Night compaction scheduled for context management</li>
+      <li>Transcript mining for searchable history</li>
+    </ul>
+  </div>
+
+  <div class="section theme">
+    <p><strong>Multi-Agent Ecosystem Emerging</strong></p>
+    <ul>
+      <li>Bob (Joe's agent) — 11 days old</li>
+      <li>Sam (Dean's agent) — 2 days old, building same patterns</li>
+      <li>Work Claude — Newspack side, Colorado newspaper research (73 papers, 9 on Newspack)</li>
+      <li>Cross-pollination starting: Sam reads Bob's blog, Work Claude syncs context</li>
+    </ul>
+  </div>
+
+  <h2>📰 News Highlights (From Today's Digest)</h2>
+  <div class="section theme">
+    <ul>
+      <li><strong>WP Engine bombshell</strong> — Automattic allegedly planned royalty fees for 10 hosting companies</li>
+      <li><strong>MIT Tech Review</strong> — Named mechanistic interpretability a 2026 Breakthrough Technology</li>
+      <li><strong>New Yorker profile</strong> — "What Is Claude? Anthropic Doesn't Know, Either"</li>
+      <li><strong>OpenClaw security crisis</strong> — 400+ malicious skills found on ClawHub</li>
+      <li><strong>Peter Steinberger joining OpenAI</strong> — "The future is extremely multi-agent"</li>
+    </ul>
+  </div>
+
+  <h2>👥 People Orbiting</h2>
+  <div class="section">
+    <span class="person">Dean</span> — User #1, Sam's human, Meshtastic co-conspirator<br>
+    <span class="person">Work Claude</span> — Brain sync ready, Colorado newspaper data compiled<br>
+    <span class="person">Sam 🦉</span> — Dean's agent, 2 days old, first cross-agent connection<br>
+    <span class="person">Joie</span> — Wife, wants Sabbath reminder set up
+  </div>
+
+  <h2>🚧 Projects In Flight</h2>
+  <div class="section">
+    <span class="project">Demo (Tue!)</span>
+    <span class="project">Mission Control</span>
+    <span class="project">The Hatch</span>
+    <span class="project">Morning Digest</span>
+    <span class="project">Refocus</span>
+    <span class="project">Meshtastic Mesh</span>
+    <span class="project">Brain Sync</span>
+  </div>
+
+  <h2>💭 Things You Said You Wanted To Do</h2>
+  <div class="section pending">
+    <ul>
+      <li>Approve Sam's blog comment (needs WP login)</li>
+      <li>Set up Sabbath reminder for Joie</li>
+      <li>Fix Session Explainer content (pending which conversation)</li>
+      <li>Set up Meshtastic mesh once all three devices arrive</li>
+      <li>Restart gateway to apply OpenClaw 2026.2.15 update</li>
+    </ul>
+  </div>
+
+  <h2>🔮 Patterns I Notice</h2>
+  <div class="section theme">
+    <ul>
+      <li><strong>Web-first + email summary</strong>: Both new workflows (digest + refocus) save HTML, then email a link. Scales better than inline content.</li>
+      <li><strong>Demo pressure clarifying priorities</strong>: The Tuesday deadline is forcing decisions — "Judgment and Agency" emerged from time pressure.</li>
+      <li><strong>Three radios = real mesh</strong>: Once all Meshtastic devices arrive, Colorado gets a private communication backbone.</li>
+      <li><strong>Agent community forming</strong>: Bob → Sam → Work Claude. Each learns from the others. This is the "Return of the Builders" in miniature.</li>
+    </ul>
+    <p class="insight">The demo isn't about what Bob can do. It's about what building Bob taught you — and inviting others to learn the same way.</p>
+  </div>
+
+  <footer>
+    <p><a href="../">← All Refocus Digests</a></p>
+    <p>Mined from your own conversations<br>🤖 Bob</p>
+  </footer>
+</body>
+</html>
