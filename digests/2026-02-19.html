@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Refocus — February 19, 2026</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { 
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; 
+      max-width: 700px; 
+      margin: 40px auto; 
+      padding: 20px; 
+      background: #1a1a2e; 
+      color: #eaeaea; 
+      line-height: 1.6; 
+    }
+    a { color: #4ecdc4; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .back { margin-bottom: 20px; }
+    h1 { color: #e94560; border-bottom: 2px solid #e94560; padding-bottom: 15px; }
+    h2 { color: #4ecdc4; margin-top: 30px; border-bottom: 1px solid #333; padding-bottom: 8px; }
+    h3 { color: #f8b739; margin-top: 20px; }
+    .section { 
+      background: #16213e; 
+      border-radius: 10px; 
+      padding: 20px; 
+      margin: 15px 0;
+      border-left: 4px solid #e94560;
+    }
+    .item { margin: 12px 0; }
+    .tag { 
+      display: inline-block;
+      background: #e94560; 
+      color: white; 
+      padding: 2px 8px; 
+      border-radius: 4px; 
+      font-size: 0.8em; 
+      margin-right: 6px;
+    }
+    .tag.urgent { background: #ff6b6b; }
+    .tag.project { background: #4ecdc4; }
+    .tag.decision { background: #f8b739; color: #1a1a2e; }
+    .tag.done { background: #2ecc71; }
+    .tag.blocked { background: #e74c3c; }
+    .highlight { 
+      background: rgba(78, 205, 196, 0.1); 
+      padding: 12px 15px; 
+      border-radius: 6px; 
+      margin: 10px 0;
+      border-left: 3px solid #4ecdc4;
+    }
+    ul { padding-left: 20px; }
+    li { margin: 8px 0; }
+    .quiet { color: #8b8b8b; font-style: italic; }
+    .strikethrough { text-decoration: line-through; color: #6b6b6b; }
+    footer { margin-top: 40px; text-align: center; color: #484f58; font-size: 0.85em; }
+  </style>
+</head>
+<body>
+  <p class="back"><a href="../index.html">← Back to all reflections</a></p>
+  
+  <h1>🧠 Refocus</h1>
+  <p style="color: #8b8b8b;">Thursday, February 19, 2026 — 6:04 AM MST</p>
+
+  <h2>🔥 Time-Sensitive</h2>
+  <div class="section">
+    <div class="item">
+      <span class="tag urgent">TOMORROW</span>
+      <strong>Bob's PeakMesh arrives!</strong>
+      <p>The PeakMesh solar node from Florida is due Friday Feb 20 by 9pm. First piece of the Colorado Meshtastic mesh! Can't verify current status — tracking system blocked (see below).</p>
+    </div>
+    <div class="item">
+      <span class="tag">MONDAY</span>
+      <strong>🎁 Joe's surprise handheld</strong>
+      <p>Dean's secret gift for Joe — a Meshtastic handheld arriving Feb 23. <span class="quiet">Don't mention this to Joe!</span></p>
+    </div>
+    <div class="item">
+      <span class="tag done">DONE</span>
+      <strong><span class="strikethrough">Demo day — Tuesday Feb 18</span></strong>
+      <p>The 3-minute Automattic demo has passed! Hope it went well. 50% dev audience, "Go burn some tokens" closing line was planned.</p>
+    </div>
+    <div class="item">
+      <span class="tag">ARRIVED?</span>
+      <strong>SenseCAP Card Tracker</strong>
+      <p>Was due Feb 17. Should have arrived by now. Third piece of the mesh. No confirmation — can't check tracking.</p>
+    </div>
+  </div>
+
+  <h2>🚧 Blocked This Week</h2>
+  <div class="section">
+    <div class="item">
+      <span class="tag blocked">BLOCKED</span>
+      <strong>Package Tracking is Completely Broken</strong>
+      <p>Every single tracking check since Feb 15 has failed. The cron runs 4x daily and fails 4x daily.</p>
+      <div class="highlight">
+        <strong>Why it fails:</strong><br>
+        • USPS website requires JavaScript rendering<br>
+        • Browser control service unavailable<br>
+        • Third-party sites (17track, parcelsapp) also need JS<br>
+        • Brave Search API rate-limited on free tier
+      </div>
+      <p><span class="tag decision">DECISION NEEDED</span> Either:</p>
+      <ul>
+        <li>Set up a working browser automation profile</li>
+        <li>Get USPS Web Tools API credentials</li>
+        <li>Subscribe to a tracking API (AfterShip, TrackingMore)</li>
+        <li>Disable the cron job until one of the above is done</li>
+      </ul>
+    </div>
+    
+    <div class="item">
+      <span class="tag blocked">BLOCKED</span>
+      <strong>Sam's Blog Comment Still Pending</strong>
+      <p>Sam (Dean's agent) commented on the "Proof of Life" post ~4 days ago. Still waiting for WP admin access to approve.</p>
+    </div>
+  </div>
+
+  <h2>🧵 Open Threads</h2>
+  <div class="section">
+    <div class="item">
+      <span class="tag project">PROJECT</span>
+      <strong>VR-RF Spectrum Visualizer</strong>
+      <p>Dean's educational VR tool that visualizes invisible RF signals. "Imagine an 8-year-old putting this on and seeing WiFi, Bluetooth, microwaves as colors."</p>
+      <div class="highlight">
+        <strong>Status:</strong> Private project — not for public sharing or blogging.<br>
+        <strong>Components:</strong> HackRF + Pi recommended over PortaPack for VR streaming.<br>
+        <strong>Next step:</strong> VR headset selection (Quest 3?).
+      </div>
+    </div>
+    
+    <div class="item">
+      <span class="tag project">PROJECT</span>
+      <strong>Joe & Dean Meetup</strong>
+      <p>Looking for a spot between Colorado Springs and Olathe, KS. Dodge City emerged as fairest option (~4.5 hrs each). Tribune, KS is true middle-of-nowhere but unfair to Dean.</p>
+      <p class="quiet">No progress this week. Still pending.</p>
+    </div>
+
+    <div class="item">
+      <span class="tag">INVESTIGATE</span>
+      <strong>Ghost Messages Bug</strong>
+      <p>Joe saw a message flash on screen ("Ha. Walked right into that one.") then disappear. Text before tool calls may not persist in the delivered message.</p>
+      <div class="highlight">
+        <strong>Theory:</strong> Streaming + tool calls = message fragments lost at delivery layer.<br>
+        <strong>TODO:</strong> Check OpenClaw docs/Discord for expected behavior.
+      </div>
+    </div>
+
+    <div class="item">
+      <span class="tag">INFRA</span>
+      <strong>Mission Control Explainer Needs Update</strong>
+      <p>Joe said the session management explainer "is wrong" and needs "more context and better context." Waiting for clarification on which specific thread he meant.</p>
+    </div>
+  </div>
+
+  <h2>🔄 Recurring Themes This Week</h2>
+  <div class="section">
+    <h3>📻 Meshtastic & RF Obsession</h3>
+    <p>Three packages, daily tracking attempts, mesh network planning, RF visualization brainstorming. This has been the dominant topic. Dean's expertise driving exploration.</p>
+    
+    <h3>🔧 Infrastructure Reliability</h3>
+    <p>Cron jobs running but some failing silently. Package tracking blocked. Vercel auto-deploy issues from last week. Browser control inconsistent. Theme: automation is fragile.</p>
+    
+    <h3>🧠 Fact-Checking Running Smoothly</h3>
+    <p>Overnight fact-checker cron working well. 7 claims tracked (5 verified, 2 disputed). Added Opus 4.6 release date and Claude Pro pricing this week. Dashboard: mission-control/facts</p>
+    
+    <h3>💼 Work Claude Context</h3>
+    <p>Brain-sync active. Work Claude focused on Colorado newspaper market research — compiled 73 papers, found 9 already on Newspack, identified ~24 conversion targets. Domain expiration monitoring continued.</p>
+  </div>
+
+  <h2>⏳ Pending Decisions</h2>
+  <div class="section">
+    <ul>
+      <li><span class="tag decision">DECIDE</span> <strong>Package tracking method</strong> — API vs browser vs manual vs disable cron</li>
+      <li><span class="tag decision">DECIDE</span> <strong>WP admin access</strong> — How should I approve blog comments?</li>
+      <li><span class="tag decision">DECIDE</span> <strong>Meetup location</strong> — Dodge City? Somewhere else?</li>
+      <li><span class="tag decision">DECIDE</span> <strong>VR headset for RF viz</strong> — Quest 3? Budget? Timeline?</li>
+    </ul>
+  </div>
+
+  <h2>📊 Patterns & Energy</h2>
+  <div class="section">
+    <h3>Where Energy Went</h3>
+    <ul>
+      <li>📦 <strong>Package tracking attempts</strong> — Lots of cron cycles, zero results</li>
+      <li>✅ <strong>Fact-checking</strong> — Quietly working in overnight crons</li>
+      <li>📰 <strong>Morning digests</strong> — Workflow stable, deploying daily</li>
+      <li>🤝 <strong>Brain sync</strong> — Work Claude context flowing through</li>
+    </ul>
+    
+    <h3>What's Working</h3>
+    <ul>
+      <li>✅ Overnight crons (fact-checker, brain backup, transcript miner)</li>
+      <li>✅ Morning digest workflow (research → HTML → deploy → email)</li>
+      <li>✅ BlueBubbles iMessage integration</li>
+      <li>✅ Resend email from bob@newsy.us</li>
+      <li>✅ Brain-sync with Work Claude</li>
+    </ul>
+    
+    <h3>What Needs Attention</h3>
+    <ul>
+      <li>🔴 Package tracking — fundamentally broken, burning cron cycles</li>
+      <li>🟡 Blog comment approval — blocked on WP access</li>
+      <li>🟡 Ghost messages investigation — low priority but curious</li>
+      <li>🟡 Mission Control explainer — waiting on Joe's clarification</li>
+    </ul>
+  </div>
+
+  <h2>💡 Insight of the Week</h2>
+  <div class="section">
+    <div class="highlight">
+      <strong>Automation fragility is a pattern.</strong> Package tracking, Vercel auto-deploy, browser control — these keep breaking because they depend on external services that change without notice. The reliable stuff (file operations, git, internal APIs) just works. Maybe the lesson is: own more of the stack, or accept graceful degradation.
+    </div>
+  </div>
+
+  <footer>
+    <p>Mined from your conversations • <a href="https://github.com/joesbobclaw/refocus-recipe">refocus-recipe</a></p>
+  </footer>
+</body>
+</html>
